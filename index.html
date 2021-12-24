@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* attribution */
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    /* End of attribution */
+    /* Global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --soft-blue: hsl(215, 51%, 70%);
+      --cyan-color: hsl(178, 100%, 50%);
+      --main-dark-blue: hsl(217, 54%, 11%);
+      --card-dark-blue: hsl(216, 50%, 16%);
+      --line-dark-blue: hsl(215, 32%, 27%);
+      --white-color: hsl(0, 0%, 100%);
+      --paragraph-font-size: 18px;
+    }
+    body {
+      margin: 0px;
+      font-family: 'Outfit', sans-serif;
+      
+    }
+    img {
+      max-width: 100%;
+    }
+    .container {
+      width: 100%;
+      height: 98vh;
+      background-color: var(--main-dark-blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+      width: 350px;
+      background-color: var(--card-dark-blue);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 30px 5px 15px hsl(217deg 53% 10% / 50%), 0px 20px 20px 20px hsl(217deg 49% 11% / 35%);
+    }
+    .box img {
+      width: 350px;
+      border-radius: 10px;
+    }
+    .box .content h2 {
+      margin: 20px 0 15px 0;
+      color: var(--white-color);
+      font-size: 22px;
+    }
+    .box .content p {
+      font-weight: 300;
+      font-size: var(--paragraph-font-size);
+      color: var(--soft-blue);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .box .content .middel {
+      display: flex;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+    .box .content .middel .value {
+      color: var(--cyan-color);
+      margin-right: 110px;
+      font-weight: 600;
+    }
+    .box .content .middel img:first-child {
+      margin-right: 7px;
+      width: 10px;
+    }
+    .box .content .middel .days {
+      color: var(--soft-blue);
+    }
+    .box .content .middel img {
+      margin-right: 5px;
+      width: 18px;
+    }
+    .box .footer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 15px;
+      border-top: 1px solid var(--line-dark-blue);
+    }
+    .box .footer img {
+      width: 35px;
+      margin-right: 15px;
+      border-radius: 50%;
+      border: 1px solid var(--white-color);
+    }
+    .box .footer p {
+      color: var(--soft-blue);
+    }
+    .box .footer p > span {
+      color: var(--white-color);
+    }
+    /* End of Global */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <img src="images/image-equilibrium.jpg" alt="equilibrium image">
+      <div class="content">
+        <h2>Equilibrium #3429</h2>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="middel">
+          <img src="images/icon-ethereum.svg" alt="ethereum icon">
+          <span class="value">0.041 ETH</span>
+          <img src="images/icon-clock.svg" alt="clock icon"> 
+          <span class="days">3 days left</span>
+        </div>
+            </div>
+      <div class="footer">
+        <img src="images/image-avatar.png" alt="avatar image">
+        <p>Creation of <span>Jules Wyvern</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hasaan Muhammed</a>.
+  </div>
+</body>
+</html>
